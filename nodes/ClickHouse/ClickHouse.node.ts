@@ -172,7 +172,6 @@ export class ClickHouse implements INodeType {
 
 			const result = await client.query({
 				query: query,
-				format: 'JSONEachRow',
 				query_params: queryParams,
 			})
 
